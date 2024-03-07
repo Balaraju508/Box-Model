@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box model</title>
+        <style>
+            *{
+                background: pink;
+                border: 3px solid black;
+                border-radius: 5px;
+            }
+            
+        </style>
+    </head>
+    <frameset rows="20px, 80px"  scrolling="auto">
+        <frame id="one" name="top" src="Title.html"></frame>
+        <frameset cols="30px,70px,30px">
+            <frame name="left" src="left linked.html"></frame>
+            <frameset rows="10px,90px">
+                <frame name="top" src="top linked.html"></frame>
+                <frame name="bottom" src="bottom linked.html"></frame>
+            </frameset>
+            <frame name="right" src="right linked.html"> 
+        </frameset>
+    </frameset>
+</html>
